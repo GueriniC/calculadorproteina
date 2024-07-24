@@ -77,7 +77,8 @@ const productosProteina = [
                 nombre: "Isopure Protein Powder Plant based",
                 precio: 70776,
                 peso: 521,
-                imagen: "assets/isopure_plantbased.webp"
+                imagen: "assets/isopure_plantbased.webp",
+                descripcion: "vegana plant based organica"
             },
             {
                 id: 2,
@@ -85,7 +86,8 @@ const productosProteina = [
                 nombre: "Isopure Zero Carb Protein",
                 precio: 55009,
                 peso: 454,
-                imagen: "assets/isopure_zerocarbs.webp"
+                imagen: "assets/isopure_zerocarbs.webp",
+                descripcion: "sin sabor neutra",
             },
             {
                 id: 3,
@@ -93,7 +95,8 @@ const productosProteina = [
                 nombre: "Isopure Protein Powder infusions",
                 precio: 76107,
                 peso: 454,
-                imagen: "assets/isopure_powderinfusions.webp"
+                imagen: "assets/isopure_powderinfusions.webp",
+                descripcion: "frutas",
 
             },
             {
@@ -104,6 +107,7 @@ const productosProteina = [
                 peso: 2268,
                 sabores: ["vainilla", "Strawberry"],
                 imagen: "assets/bsn_wp6.webp",
+                descripcion: "vainilla frutilla ",
             },
             {
                 id: 5,
@@ -113,6 +117,7 @@ const productosProteina = [
                 peso: 1814,
                 sabores: ["vainilla", "Strawberry"],
                 imagen: "assets/bsn_wp6-edge.webp",
+                descripcion: " vainilla frutilla",
             },
             {
                 id: 6,
@@ -122,6 +127,7 @@ const productosProteina = [
                 peso: 907,
                 sabores: ["Cookies and Cream", "Strawberry", "Mocha Capuccino"],
                 imagen: "assets/on-gold.webp",
+                descripcion: " cookies cream mocha capuccino ",
 
             },
             {
@@ -132,6 +138,7 @@ const productosProteina = [
                 peso: 907,
                 sabores: ["Double Rich Chocolate", "Milk Chocolate", "Strawberry Shortcake"],
                 imagen: "assets/nitro-wheygold.webp",
+                descripcion: "chocolate milk leche ",
             }
 ];
 
@@ -319,4 +326,16 @@ function botonCarrito() {
         cartItems.style.display = "block";
     }
 }
+/*SEARCH*/
+let input = document.getElementById("search");
+input.onchange = () => {
+    const inputValue = input.value.trim().toLowerCase();
+    const productosSearch = productosProteina.filter(producto => 
+        producto.nombre.toLowerCase().includes(inputValue) || 
+        producto.marca.toLowerCase().includes(inputValue) || 
+        producto.descripcion.toLowerCase().includes(inputValue)
+    );
+    mostrarProductos(productosSearch)
+};
+
 
