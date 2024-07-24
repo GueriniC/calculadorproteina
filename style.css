@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    position: relative;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1, #saludo, #carrito {
+        flex: 1
+    }
+    h1 {
+        text-align: left;
+        padding-left: 25px
+    }
+  
+    #carrito{
+        text-align: right;
+        h2 {
+            display: none
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+        }
+        .carritoContador
+        #cart-contador{
+            background-color: white;
+            color: #4CAF50;
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            position: absolute;
+            right: 75px;
+            top: 0px
+        }
+        #cart-items {
+            display: none; 
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            z-index: 10;
+            right: 0px;
+            top: 0px;
+            bottom:0px;
+            border-radius:5px;
+            padding: 10px;
+            color: #b25061;
+            width: 400px;
+            box-shadow: -24px 1px 0px 3000px rgba(0,0,0,0.53);
+            -webkit-box-shadow: -24px 1px 0px 3000px rgba(0,0,0,0.53);
+            -moz-box-shadow: -24px 1px 0px 3000px rgba(0,0,0,0.53);
+            button {
+                width: 15px;
+                color: #b25061;
+                background-color: transparent;
+                border: none;
+                font-weight: bolder;
+            }
+            > div:first-child {
+                padding-top: 50px
+            }
+            > div > div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid pink;
+                padding: 5px;
+                gap: 0px;
+            }
+            > div > div > div {
+                text-align: left;
+            }
+            > button {
+                top: 0px;
+                position: absolute;
+                right: 50px
+            }
+            .cart-total {
+                top: 0px;
+                position: absolute;
+                font-weight: bolder;
+                border-bottom: 1px solid pink
+            }
+        }
+    }
+}
+main {
+    padding: 1em;
+}
+h1 {
+    font-size: 2em;
+    color: #fff;
+}
+h2 {
+    font-size: 1.5em;
+}
+
+.calculadora-style {
+    margin-top: 15px;
+    background-color: pink;
+    padding: 15px;
+    border-radius: 10px;
+    color: #b25061;
+    #formulario{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: flex-start;
+        .cuestionario > div {
+        display: flex;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+        justify-content: space-between;
+        gap: 50px;
+        margin-bottom: 10px;
+        }
+        .result {
+            max-width: 500px;
+            margin-top: 25px
+        }
+        .proteinatexto{
+            font-weight: bolder;
+        }
+    }
+}
+
+select,
+input,
+button{
+    border: 1px solid #b25061;
+    padding: 10px;
+    border-radius: 5px;
+    color: #b25061;
+    background-color: #fff;
+    width: 200px;
+    
+}
+button:hover,
+.calcular:hover{
+    cursor: pointer;
+    border: 1px solid pink;
+    background-color: #b25061;
+    color: #fff;
+}
+
+.eCommerce{
+    margin-top: 15px;
+    background-color: #eaeaea;
+    padding: 25px;
+    border-radius: 10px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 2em;
+}
+.card {
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    position: relative;
+    padding-bottom: 80px;
+    img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+    }
+    .productoMarca {
+        color: pink
+    }
+    .productoCantidad{
+        font-size: 11px
+    }
+}
+
+
+
+
+
+.product-agregado {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    border: 1px solid #b25061;
+    padding: 10px;
+    border-radius: 5px;
+    color: #b25061;
+    background-color: #fff;
+    width: 200px;
+}
+
+
