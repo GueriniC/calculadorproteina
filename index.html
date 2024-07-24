@@ -1,21 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- JS -->
     <script defer src="js/main.js"></script>
-    <title>Calculadora de proteina</title>
+    <title>Clara Guerini</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1>Clara Guerini</h1>
-    <p>Quiero armar un calculador de cantidad de proteina diaria para un sitio que vende suplementos.</p>
-    
+    <header>
+        <h1>B-Fit</h1>
+        <div id="saludo" class="result"></div>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <button id="botonCarritoID">
+                <div class="carritoContador">
+                    <p id="cart-contador">0</p>
+                    <img src="assets/carrito-de-compras.png" alt="icono carrito de compras">
+                </div>
+                <p id="total-price">$0.00</p>
+            </button>
+            <div id="cart-items">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculadora-style">
+            <h2>Calculadora de Proteína diaria </h2>
+            <form id="formulario">
+                <div class="cuestionario">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div> 
+                    <div>     
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number" id="peso" name="peso" required>
+                    </div>
+                    <div>
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero" required>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="estiloVida">Estilo de Vida:</label>
+                        <select id="estiloVida" name="estiloVida" required>
+                        <option value="sedentario">Sedentario</option>
+                        <option value="activo">Activo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="objetivo">Objetivo:</label>
+                        <select id="objetivo" name="objetivo" required>
+                            <option value="perder peso">Perder peso</option>
+                            <option value="mantener peso">Mantener peso</option>
+                            <option value="ganar músculo">Ganar músculo</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Calcular" class="calcular">
+                    <div id="resultado" class="result"></div>
+                 </div>
+            </form>
+        </section>
+
+        <section class="eCommerce">
+            <h2>Proteinas</h2>
+            <div class="carritoyfiltro">
+                <div class="filter">
+                    <select id="filtroNombre">
+                        <option value="">Filtrar por nombre de producto</option>
+                    </select>
+                    <select id="filtroMarca">
+                        <option value="">Filtrar por marca</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-list" id="product-list"></div>
+            <div class="product-agregado" id="product-agregado" style="display: none;"></div>
+        </section>
+    </main>
 </body>
-</html>
-
-
-
-
-
-
