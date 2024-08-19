@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "marca": "Isopure",
+        "nombre": "Isopure Protein Powder Plant based",
+        "precio": 70776,
+        "peso": 521,
+        "imagen": "./assets/isopure_plantbased.webp",
+        "descripcion": "vegana plant based organica"
+    },
+    {
+        "id": 2,
+        "marca": "Isopure",
+        "nombre": "Isopure Zero Carb Protein",
+        "precio": 55009,
+        "peso": 454,
+        "imagen": "./assets/isopure_zerocarbs.webp",
+        "descripcion": "sin sabor neutra"
+    },
+    {
+        "id": 3,
+        "marca": "Isopure",
+        "nombre": "Isopure Protein Powder infusions",
+        "precio": 76107,
+        "peso": 454,
+        "imagen": "./assets/isopure_powderinfusions.webp",
+        "descripcion": "frutas"
+    },
+    {
+        "id": 4,
+        "marca": "BSN",
+        "nombre": "Whey Protein BSN Syntha-6",
+        "precio": 131112,
+        "peso": 2268,
+        "sabores": ["vainilla", "Strawberry"],
+        "imagen": "./assets/bsn_wp6.webp",
+        "descripcion": "vainilla frutilla"
+    },
+    {
+        "id": 5,
+        "marca": "BSN",
+        "nombre": "Whey Protein BSN Syntha-6 Edge",
+        "precio": 139859,
+        "peso": 1814,
+        "sabores": ["vainilla", "Strawberry"],
+        "imagen": "./assets/bsn_wp6-edge.webp",
+        "descripcion": "vainilla frutilla"
+    },
+    {
+        "id": 6,
+        "marca": "Optimum Nutrition",
+        "nombre": "Whey Protein ON 100% Whey Gold",
+        "precio": 109071,
+        "peso": 907,
+        "sabores": ["Cookies and Cream", "Strawberry", "Mocha Capuccino"],
+        "imagen": "./assets/on-gold.webp",
+        "descripcion": "cookies cream mocha capuccino"
+    },
+    {
+        "id": 7,
+        "marca": "Muscletech",
+        "nombre": "Nitro Tech 100% Whey Gold Protein",
+        "precio": 83335,
+        "peso": 907,
+        "sabores": ["Double Rich Chocolate", "Milk Chocolate", "Strawberry Shortcake"],
+        "imagen": "./assets/nitro-wheygold.webp",
+        "descripcion": "chocolate milk leche"
+    }
+]
