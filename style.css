@@ -373,6 +373,7 @@ div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{
     color: var(--colorA);
     input, select{
         width: 180px;
+        height: 40px;
     }
     .cuestionario {
         display: flex;
